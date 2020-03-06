@@ -2,9 +2,11 @@
   "name": "axios-etags-cache",
   "version": "1.0.0",
   "description": "Módulo para otorgar caché a axios, basado en etags",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": ""
+    "test": "",
+    "prepublish": "tsc"
   },
   "keywords": [
     "cache",
@@ -12,5 +14,16 @@
     "axios"
   ],
   "author": "Luciano Pérez Cerra",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luchopcerra/axios-etag-cache.git"
+  },
+  "bugs": {
+    "url": "https://github.com/luchopcerra/axios-etag-cache/issues"
+  },
+  "homepage": "https://github.com/luchopcerra/axios-etag-cache#readme",
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
 }
