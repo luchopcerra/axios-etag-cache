@@ -1,0 +1,16 @@
+{
+  "name": "axios-etags-cache",
+  "version": "1.0.0",
+  "description": "Módulo para otorgar caché a axios, basado en etags",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "keywords": [
+    "cache",
+    "etag",
+    "axios"
+  ],
+  "author": "Luciano Pérez Cerra",
+  "license": "ISC"
+}
