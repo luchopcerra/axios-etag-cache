@@ -25,7 +25,7 @@
   "homepage": "https://github.com/luchopcerra/axios-etag-cache#readme",
   "devDependencies": {
     "typescript": "^3.8.3",
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   },
   "dependencies": {
     "@types/node": "^13.7.7"
