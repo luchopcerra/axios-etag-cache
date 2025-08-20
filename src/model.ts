@@ -1,4 +1,4 @@
-import { AxiosError, AxiosRequestConfig, AxiosResponse } from "axios";
+import { AxiosError, AxiosRequestConfig, AxiosResponse, InternalAxiosRequestConfig } from "axios";
 
 class CacheHitException<T = any> implements AxiosError<T> {
   public isAxiosError = false;
@@ -7,9 +7,9 @@ class CacheHitException<T = any> implements AxiosError<T> {
   });
   public name = "CacheHitException";
   public message = "CacheHitException";
-  config: AxiosRequestConfig;
+  config: InternalAxiosRequestConfig;
   public cachedResponse: T;
-  constructor(value: T, config: AxiosRequestConfig) {
+  constructor(value: T, config: InternalAxiosRequestConfig) {
     this.config = config;
     this.cachedResponse = value;
   }
